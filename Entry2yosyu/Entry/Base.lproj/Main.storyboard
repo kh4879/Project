@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Entry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uf7-az-XJQ" userLabel="PinkBtnView">
+                                <rect key="frame" x="10" y="140" width="355" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeO-N8-ugt">
+                                        <rect key="frame" x="0.0" y="-2" width="355" height="44"/>
+                                        <color key="backgroundColor" red="0.88627450980392153" green="0.396078431372549" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="新規登録">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapButtonNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfO-hf-AUK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.53380789974619292" green="0.25921254635734148" blue="0.32880124078832546" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="VeO-N8-ugt" firstAttribute="top" secondItem="uf7-az-XJQ" secondAttribute="top" constant="-2" id="D16-rc-HNk"/>
+                                    <constraint firstAttribute="bottom" secondItem="VeO-N8-ugt" secondAttribute="bottom" constant="2" id="RIk-dS-rVP"/>
+                                    <constraint firstItem="VeO-N8-ugt" firstAttribute="leading" secondItem="uf7-az-XJQ" secondAttribute="leading" id="jK7-RJ-eKH"/>
+                                    <constraint firstAttribute="trailing" secondItem="VeO-N8-ugt" secondAttribute="trailing" id="kgN-VH-EyU"/>
+                                    <constraint firstAttribute="height" constant="44" id="vlA-hh-mwr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNJ-Ti-alg" userLabel="BlueBtnView">
+                                <rect key="frame" x="10" y="204" width="355" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTT-bg-Mjp">
+                                        <rect key="frame" x="0.0" y="-2" width="355" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="編集">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapButtonEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSz-Ob-9Wo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.41568627450980389" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JTT-bg-Mjp" secondAttribute="trailing" id="4zk-Oz-cSq"/>
+                                    <constraint firstAttribute="height" constant="44" id="Va1-WS-le6"/>
+                                    <constraint firstItem="JTT-bg-Mjp" firstAttribute="top" secondItem="YNJ-Ti-alg" secondAttribute="top" constant="-2" id="XhZ-Hp-QMd"/>
+                                    <constraint firstItem="JTT-bg-Mjp" firstAttribute="leading" secondItem="YNJ-Ti-alg" secondAttribute="leading" id="YbI-0i-6er"/>
+                                    <constraint firstAttribute="bottom" secondItem="JTT-bg-Mjp" secondAttribute="bottom" constant="2" id="oZI-b3-0OK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YNJ-Ti-alg" firstAttribute="top" secondItem="uf7-az-XJQ" secondAttribute="bottom" constant="20" id="M8C-8m-04I"/>
+                            <constraint firstItem="YNJ-Ti-alg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dOb-Fp-NzE"/>
+                            <constraint firstItem="uf7-az-XJQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="gop-ZK-HpN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uf7-az-XJQ" secondAttribute="trailing" constant="10" id="gyr-7g-Qtc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YNJ-Ti-alg" secondAttribute="trailing" constant="10" id="psO-eb-phj"/>
+                            <constraint firstItem="uf7-az-XJQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zZK-ai-eSk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="editBtnView" destination="YNJ-Ti-alg" id="3sj-2k-jp5"/>
+                        <outlet property="newBtnView" destination="uf7-az-XJQ" id="8Db-7M-Gdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
